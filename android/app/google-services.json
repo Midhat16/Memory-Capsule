@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "719218262726",
+    "firebase_url": "https://memory-b35b1-default-rtdb.firebaseio.com",
+    "project_id": "memory-b35b1",
+    "storage_bucket": "memory-b35b1.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:719218262726:android:738290e96261a027940dc7",
+        "android_client_info": {
+          "package_name": "com.example.memory_capsule1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYWoiChq_0hPhoPHuQVhgYiKFfoiYmJ64"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:719218262726:android:1878616a7ee0eab5940dc7",
+        "android_client_info": {
+          "package_name": "com.example.untitled3"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYWoiChq_0hPhoPHuQVhgYiKFfoiYmJ64"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
