@@ -1,15 +1,11 @@
 import 'dart:convert';
 import 'dart:io';
-
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:intl/intl.dart';
-
-import 'package:shared_preferences/shared_preferences.dart';
 import 'package:untitled3/screens/top%20curve%20theme.dart';
 
 class Editprofile extends StatefulWidget {

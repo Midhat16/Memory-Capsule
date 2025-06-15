@@ -1,8 +1,8 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'profile page.dart';
 import 'Signup page.dart';
+import 'home screens.dart';
 
 class Log extends StatefulWidget {
   const Log({super.key});
@@ -57,7 +57,7 @@ class _LogState extends State<Log> {
 
         Navigator.pushReplacement(
           context,
-          MaterialPageRoute(builder: (_) => MyProfileScreen()),
+          MaterialPageRoute(builder: (_) => HomeScreen()),
         );
       }
     } on FirebaseAuthException catch (e) {

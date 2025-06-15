@@ -38,7 +38,9 @@ dependencies:
   firebase_auth: any
   firebase_database: any
   image_picker: any
-  image_picker_plus: any
+  firebase_storage: any
+  cloud_firestore: any
+  cached_network_image: ^3.3.1
   file_picker: any
   flutter_lints: any
   flutter_stripe: any
@@ -47,11 +49,14 @@ dependencies:
   lottie: any
   shared_preferences: any
   provider: any
-  firebase_storage: any
-  intl: ^0.18.1
   get:
-  cloud_firestore: any
-  cached_network_image: ^3.3.1
+  path: any
+  intl: any
+  printing: any
+  share_plus: any
+  timezone: ^0.9.2
+  path_provider: any
+  pdf: any
 
 dev_dependencies:
   flutter_test:
@@ -85,6 +90,8 @@ flutter:
     - assets/images/sharing.png
     - assets/images/calender.png
     - assets/images/logo.png
+    - assets/images/logo2.png
+    - assets/images/pic.png
 
 
   # An image asset can refer to one or more resolution-specific "variants", see

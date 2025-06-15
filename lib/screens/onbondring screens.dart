@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:untitled3/screens/profile%20page.dart';
+import 'home screens.dart';
 
 class OnboardingScreen extends StatefulWidget {
   @override
@@ -36,12 +36,12 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
       );
     } else {
       // Navigate to main/home screen
-      Navigator.pushReplacementNamed(context, '/profile');
+      Navigator.pushReplacementNamed(context, '/home');
     }
   }
 
   void _skip() {
-    Navigator.pushReplacementNamed(context, '/profile');
+    Navigator.pushReplacementNamed(context, '/home');
   }
 
   @override
@@ -78,7 +78,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                       alignment: Alignment.topRight,
                       child: TextButton(
                         onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context){
-                          return MyProfileScreen();
+                          return HomeScreen();
                         }));},
                         child: Text("Skip", style: TextStyle(color: Colors.white)),
                       ),

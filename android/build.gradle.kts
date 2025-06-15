@@ -2,7 +2,7 @@ allprojects {
     repositories {
         google()
         mavenCentral()
-        namespace 'com.image_picker_plus'
+//        namespace 'com.image_picker_plus'
     }
 }
 

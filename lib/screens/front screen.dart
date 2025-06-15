@@ -35,7 +35,7 @@ class _FrntState extends State<Frnt> {
         ),
         child: Center(
           child: Image.asset(
-            'assets/images/logo.png',
+            'assets/images/logo2.png',
             width: 400,
             height: 450,
           ),

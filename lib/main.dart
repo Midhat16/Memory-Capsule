@@ -5,19 +5,20 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:untitled3/screens/Signup page.dart';
 import 'package:untitled3/screens/display setting screen.dart';
 import 'package:untitled3/screens/front screen.dart';
-import 'package:untitled3/screens/home screen.dart';
 import 'package:untitled3/screens/login page.dart';
 import 'package:untitled3/screens/onbondring screens.dart';
 import 'package:untitled3/screens/profile page.dart';
 import 'package:untitled3/screens/theme provider.dart';
 import 'firebase_options.dart';
+import 'screens/capsule screen.dart';
+import 'screens/home screens.dart';
+import 'screens/tracker screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
-//fgfhggf
   runApp(
     MultiProvider(
       providers: [
@@ -75,7 +76,6 @@ class MyApp extends StatelessWidget {
       );
     }
 
-
     final TextTheme lightTextTheme = getTextTheme(
       displaySettings.fontFamily,
       displaySettings.fontSize / 16.0,
@@ -86,24 +86,31 @@ class MyApp extends StatelessWidget {
       displaySettings.fontSize / 16.0,
     );
 
-
-    // Build the light theme
     final lightTheme = ThemeData(
       brightness: Brightness.light,
-      fontFamily: displaySettings.fontFamily, // Set globally
+      fontFamily: displaySettings.fontFamily,
       colorScheme: lightColorScheme,
       primaryColor: lightColorScheme.primary,
       textTheme: lightTextTheme,
+      scaffoldBackgroundColor: Colors.grey[100],
       appBarTheme: AppBarTheme(
-        backgroundColor: lightColorScheme.primary,
-        foregroundColor: lightTextColor,
+        backgroundColor: Colors.white,
+        iconTheme: IconThemeData(color: Colors.black),
+        titleTextStyle: TextStyle(
+          color: Colors.black,
+          fontSize: 20,
+          fontWeight: FontWeight.bold,
+        ),
+      ),
+      floatingActionButtonTheme: FloatingActionButtonThemeData(
+        backgroundColor: Colors.green.shade900,
+        foregroundColor: Colors.white,
       ),
     );
 
-    // Build the dark theme
     final darkTheme = ThemeData(
       brightness: Brightness.dark,
-      fontFamily: displaySettings.fontFamily, // Set globally
+      fontFamily: displaySettings.fontFamily,
       colorScheme: darkColorScheme,
       primaryColor: darkColorScheme.primary,
       textTheme: darkTextTheme,
@@ -137,6 +144,8 @@ class MyApp extends StatelessWidget {
         '/login': (context) => Log(),
         '/profile': (context) => MyProfileScreen(),
         '/home': (context) => HomeScreen(),
+        '/create': (context) => CreateCapsuleScreen(),
+        '/tracker': (context) => CapsuleTrackerScreen(),
       },
     );
   }
